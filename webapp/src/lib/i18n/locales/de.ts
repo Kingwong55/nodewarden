@@ -7,10 +7,13 @@ const de: Record<string, string> = {
   "nav_my_vault": "Mein Tresor",
   "nav_vault_items": "Tresor",
   "nav_sends": "Sendungen",
+  "nav_generator": "Passwortwerkzeug", "txt_password_generator": "Passwortgenerator", "txt_password_generator_description": "Erstellen Sie lokal auf diesem Gerät ein starkes, einzigartiges Passwort.", "txt_generator_type": "Generatortyp", "txt_passphrase": "Kennwortsatz", "txt_generated_password": "Generiertes Passwort", "txt_password_strength": "Stärke", "txt_password_strength_weak": "Schwach", "txt_password_strength_fair": "Mittel", "txt_password_strength_good": "Gut", "txt_password_strength_strong": "Stark", "txt_generator_security_note": "Die Erzeugung erfolgt lokal. Ihr Passwort wird nie an den Server gesendet.", "txt_generator_length": "Länge", "txt_generator_character_types": "Zeichentypen", "txt_generator_uppercase": "Großbuchstaben (A-Z)", "txt_generator_lowercase": "Kleinbuchstaben (a-z)", "txt_generator_numbers": "Zahlen (0-9)", "txt_generator_special": "Sonderzeichen (!@#$%^&*)", "txt_generator_minimum": "Mindestanzahl", "txt_generator_avoid_ambiguous": "Verwechselbare Zeichen vermeiden", "txt_generator_words": "Anzahl der Wörter", "txt_generator_separator": "Worttrenner", "txt_generator_capitalize": "Großschreibung", "txt_generator_include_number": "Eine Zahl einfügen",
   "nav_backup_strategy": "Cloud-Backup",
   "nav_import_export": "Import und Export",
   "nav_group_data_backup": "Daten & Backup",
   "nav_group_management": "Verwaltung",
+  "nav_group_tools": "Werkzeuge",
+  "nav_group_system_management": "Systemverwaltung",
   "txt_settings_appearance": "Erscheinungsbild",
   "txt_theme": "Design",
   "txt_use_system_theme": "Systemdesign verwenden",
@@ -978,6 +981,7 @@ const de: Record<string, string> = {
   "txt_save_profile_failed": "Fehler beim Speichern des Profils",
   "txt_search_sends": "Sendungen suchen...",
   "txt_session_refresh_failed": "Sitzungsaktualisierung fehlgeschlagen. Bitte melden Sie sich erneut an.",
+  "txt_session_refresh_temporarily_unavailable": "Die Sitzung kann vorübergehend nicht geprüft werden. Die Anmeldung bleibt erhalten und wird erneut versucht.",
   "txt_search_your_secure_vault": "Ihren sicheren Tresor durchsuchen...",
   "txt_search_items_count": "In {count} Einträgen suchen...",
   "txt_clear_search": "Suche löschen",
@@ -1446,5 +1450,13 @@ const de: Record<string, string> = {
   "txt_auth_request_missing_public_key": "Geräteanmeldungsanfrage fehlt ein öffentlicher Schlüssel",
   "txt_ip_address": "IP-Adresse"
 };
+
+Object.assign(de, {
+  "nav_password_security": "Passwortsicherheit", "txt_password_security": "Passwort-Sicherheitsprüfung", "txt_password_security_privacy": "Passwörter werden lokal geprüft. Erst nach dem Start wird nur ein anonymer Hash-Präfix an die Leckdatenbank gesendet.", "txt_check_password_security": "Prüfung starten", "txt_checking_password_security": "Prüfung läuft", "txt_recheck_password_security": "Erneut prüfen", "txt_password_security_ready": "Ihr Tresor ist für eine Sicherheitsprüfung bereit.", "txt_password_security_no_login": "Es gibt keine Login-Passwörter zu prüfen.", "txt_password_security_manual": "Die Prüfung startet nur auf Ihre Anfrage. Ergebnisse bleiben nur auf dieser Seite.", "txt_password_security_no_login_help": "Fügen Sie einen Login-Eintrag mit Passwort hinzu und prüfen Sie ihn anschließend hier.", "txt_exposed_passwords": "Geleakt", "txt_reused_passwords": "Wiederverwendet", "txt_weak_passwords": "Schwach", "txt_passwords_checked": "Geprüft", "txt_password_security_unavailable": "{count} Passwortprüfungen konnten die Leckdatenbank nicht erreichen. Sie werden nicht als sicher markiert.", "txt_password_security_not_checked": "Nicht geprüft", "txt_password_exposed_count": "In {count} Lecks gefunden", "txt_password_reused_count": "{count}-mal verwendet", "txt_weak_password": "Schwaches Passwort", "txt_no_password_risks": "Keine Passwortrisiken gefunden", "txt_open_vault": "Tresor öffnen", "txt_check_password_breach": "Leck prüfen", "txt_password_not_found_in_breaches": "Nicht in der Leckdatenbank gefunden", "txt_password_security_check_failed": "Die Leckprüfung konnte nicht abgeschlossen werden."
+});
+
+Object.assign(de, { "txt_password_security_last_checked": "Zuletzt überprüft: {value}" });
+Object.assign(de, { "txt_no_password_risks_in_filter": "Keine Passwortrisiken in dieser Kategorie" });
+Object.assign(de, { "txt_password_security_show_all": "Alle anzeigen", "txt_password_security_hide_all": "Alle ausblenden", "txt_password_security_jump": "Öffnen", "txt_password_security_exposed_short": "{count}-mal geleakt", "txt_password_security_weak_short": "Schwaches Passwort", "txt_password_security_reused_short": "Wiederverwendet" });
 
 export default de;
